@@ -10,7 +10,7 @@
 
 void write_file(char *buf){
     FILE *f;
-    f = fopen("./txt/sv_log.txt", "a"); 
+    f = fopen("./sv_log.txt", "a"); 
 
     fwrite(buf, sizeof(char), strlen(buf), f);
     // fwrite("\n", 1,sizeof(char), f);
@@ -65,7 +65,7 @@ int main(){
     char buf[256];
     char buf_ip[256] = "127.0.0.1 ";
     FILE *f;
-    f = fopen("./txt/sv_log.txt", "a");
+    f = fopen("./sv_log.txt", "a");
     while (1)
     {   
         
